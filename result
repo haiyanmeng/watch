@@ -1,0 +1,37 @@
+qps: 40;  burst: 20; count: 100
+time to list namespaces 100 times: 2.004921626s
+time to create 100 namespaces: 2.501167799s
+time to delete 100 namespaces: 2.50337823s
+
+qps: 20;  burst: 20; count: 100
+time to list namespaces 100 times: 4.004526169s
+time to create 100 namespaces: 5.000387268s
+time to delete 100 namespaces: 5.000000871s
+
+qps: 10;  burst: 20; count: 100
+time to list namespaces 100 times: 8.004473739s
+time to create 100 namespaces: 9.9997931s
+time to delete 100 namespaces: 10.02761749s
+
+qps: 10;  burst: 20; count: 100
+time to list namespaces 100 times: 8.004346426s
+time to create 100 namespaces: 10.000690536s
+time to delete 100 namespaces: 10.022172037s
+time to create 100 watches: 1.03237341s
+
+qps: 10;  burst: 20; count: 1000
+time to list namespaces 1000 times: 98.004111046s
+time to create 1000 namespaces: 100.000034749s
+time to delete 1000 namespaces: 100.075138926s
+
+
+qps: 10;  burst: 20; count: 1000
+time to create 100 watches: 1.03237341s
+time to create 1000 watches: 30.884905557s (resourceVersion is unset)
+time to create 1000 watches: 32.053961858s (resourceVersion is unset)
+
+time to create 1000 watches: 2.994573658s (bad watch requests - resourceVersion = "random")
+time to create 1000 watches: 1.526432275s (good watch requests with resourceVersion = "111")
+time to create 1000 watches: 3.213439039s (bad watch requests - resourceVersion = "1182xs1")
+
+
